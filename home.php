@@ -1,12 +1,8 @@
-<!--
-
-
--->
-
 
 <?php 
 session_start();
 ?>
+
 
 <!doctype html>
 <html lang="en">
@@ -46,18 +42,15 @@ session_start();
     <a href="index.php"><i class="fa fa-fw fa-sign-out"></i> Logout</a>
     <?php echo "<a class='bg-info' href='#'><i class='fa fa-fw fa-user'></i> "."<b>".$_SESSION['username']."</b></a>"; ?>
     
-</div>
+  </div>
 
 <div class="container">
 <div class="banner" >
-<video width="100%" height="100%" autoplay muted loop>
+ <video width="100%" height="100%" autoplay muted loop>
   <source src="giphy.mp4"  type="video/mp4">
   </video>
  </div>
 </div>
-
-
-
   <!--
 <div class="himage">
   <div class="htext">
@@ -68,10 +61,47 @@ session_start();
   </div>
 </div>
 -->
- <div class="landing">
+
+<div id="focusabout" >
+	<br><br>
+<center><h1 style="color:black;"><b>ABOUT US</b></h1></center>
+
+<br><br>
+<div style="margin:auto; width:50%">
+<center><p  style="font-size:30px;font-family: 'Merriweather', serif; color:black;">
+NMAM Institute Of Technology runs it’s own transport fleet catering service to 
+students who commute daily. 
+The busses run on all working days at different routes.
+</div>
+</p></center>
+    <!-- LANDING PAGE MARKUP OVER -->
+    <!--
+	<div class="container-fluid">
+	<div class="row">
+	
+	
+<div class="col-sm-6">
+<br><br>
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      
+      <img src="photos/bus2.jpeg" width="100%" height="100%">
+    </div>
+    <div class="flip-box-back">
+      <img src="photos/bus1.jpg" width="100%" height="100%">
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="col-sm-6">
+-->
+<br><br><br>
+ <div class="landing"  >
       
 
-      <div class="text-animation">
+      <div class="text-animation" >
         <!-- pasting the svg here -->
 
         <svg
@@ -314,7 +344,7 @@ session_start();
         </p>
       </div>
 
-      <div class="bus-animation">
+      <div class="bus-animation" >
         <!-- bus animation svg here -->
         <svg
           id="busanimation"
@@ -469,40 +499,8 @@ session_start();
         </svg>
       </div>
     </div>
-	<div id="focusabout"></div>
-	<br><br>
-<center><h1 style="color:black;"><b>ABOUT US</b></h1></center>
 
-<br><br>
-<div style="margin:auto; width:50%">
-<center><p  style="font-size:30px;font-family: 'Merriweather', serif; color:black;">
-NMAM Institute Of Technology runs it’s own transport fleet catering service to 
-students who commute daily. 
-The busses run on all working days at different routes.
-</div>
-</p></center>
-    <!-- LANDING PAGE MARKUP OVER -->
-	<div class="container-fluid">
-	<div class="row">
-	
-	
-<div class="col-sm-6">
-<br><br>
-<div class="flip-box">
-  <div class="flip-box-inner">
-    <div class="flip-box-front">
-      
-      <img src="photos/bus2.jpeg" width="100%" height="100%">
-    </div>
-    <div class="flip-box-back">
-      <img src="photos/bus1.jpg" width="100%" height="100%">
-    </div>
-  </div>
-</div>
-</div>
-
-<div class="col-sm-6">
-<br><br><br>
+<div class="container">
 <center>
 <h1 style="color:black;"><b>Why Prefer College Bus?</b></h1></center>
 <br>
@@ -525,6 +523,10 @@ parts of the region use these bus services for conveyance to and from the Colleg
 </div>
 </center>
 <br><br>
+</div>
+
+
+
 <center>                    <!--pricing table-->
 <div class="container" id="panel">
 <table id="customers" class="table table-hover">
@@ -651,7 +653,7 @@ $(document).ready(function(){
 });
 </script>
 <br>
-
+</div>
 <div id="loginfocus"></div>
 <!-----login/signupppppp------->
 <!-- BELOW IS HTML MARKUP FOR LOGIN AND SIGNUP BOX -->

@@ -1,0 +1,28 @@
+input[type=text],[type=date],[type=email],select{
+  width: 100%;
+  padding: 7px 7px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid red;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  margin-top:-8px;
+}
+body{
+   background-color:LightCyan;
+}
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+.button {
+  background-color: yellow; /* Green */
+  border: none;
+  color: red;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  border-radius:15px;
+}

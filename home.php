@@ -62,7 +62,7 @@ session_start();
 </div>
 -->
 
-<div id="focusabout" >
+<div style="padding-top:30px" id="focusabout" >
 	<br><br>
 <center><h1 style="color:black;"><b>ABOUT US</b></h1></center>
 
@@ -654,51 +654,7 @@ $(document).ready(function(){
 </script>
 <br>
 </div>
-<div id="loginfocus"></div>
-<!-----login/signupppppp------->
-<!-- BELOW IS HTML MARKUP FOR LOGIN AND SIGNUP BOX -->
 
-    <div class="loginAndSignup" id="loginAndSignup">
-      <div class="containers" id="containers">
-        <div class="form-container sign-up-container">
-          <form action="signup_backend.php" method="post" id="nameform">
-            <p class="form-text">Create Account</p>
-            <input type="text" name="name" placeholder="Username" />
-            <input type="email" name="email" placeholder="Email" />
-            <input type="password" name="pass" placeholder="Password" />
-            <button type="submit" form="nameform" name="submit" value="Submit">Sign Up</button>
-          </form>
-        </div>
-        <div class="form-container sign-in-container">
-          <form action="login_backend.php" method="post" id="nameform2">
-            <p class="form-text">Sign in</p>
-            <input type="email" name="email" placeholder="Email" />
-            <input  type="password" name="password" placeholder="Password" />
-            <button type="submit" form="nameform2" value="Submit">Sign In</button>
-          </form>
-        </div>
-
-        <div class="overlay-container">
-          <div class="overlay">
-            <div class="overlay-panel overlay-left">
-              <p class="form-text">Have an account?</p>
-              <p class="lsup">Click the button below and enter your credentials to login</p>
-              <button class="ghost" id="signIn">Sign In</button>
-            </div>
-            <div class="overlay-panel overlay-right">
-              <p class="form-text">Don't have an account?</p>
-              <p class="lsup">
-                Sign Up by clicking the button below and start your journey with
-                us
-              </p>
-              <button class="ghost" id="signUp">Sign Up</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- LOGIN AND SIGNUP MARKUP OVER -->
 
     <script src="main.js"></script>
 <br><br>

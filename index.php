@@ -43,18 +43,10 @@
   </video>
  </div>
 </div>
-  <!--
-<div class="himage">
-  <div class="htext">
 
-    <h1  style="font-size:50px;font-family:courier,arial,helvetica";> 	<br><br><br><br><br><br><br><b>Welcome To NMAMIT Bus Portal</b></h1>
-    <p  style="font-size:30px;font-family:courier,arial,helvetica";><b>A bus ride is like being in another world</b></p>
-  
-  </div>
-</div>
--->
+	  
 
-<div id="focusabout" >
+<div style="padding-top:30px" id="focusabout" >
 	<br><br>
 <center><h1 style="color:black;"><b>ABOUT US</b></h1></center>
 
@@ -66,29 +58,7 @@ students who commute daily.
 The busses run on all working days at different routes.
 </div>
 </p></center>
-    <!-- LANDING PAGE MARKUP OVER -->
-    <!--
-	<div class="container-fluid">
-	<div class="row">
-	
-	
-<div class="col-sm-6">
-<br><br>
-<div class="flip-box">
-  <div class="flip-box-inner">
-    <div class="flip-box-front">
-      
-      <img src="photos/bus2.jpeg" width="100%" height="100%">
-    </div>
-    <div class="flip-box-back">
-      <img src="photos/bus1.jpg" width="100%" height="100%">
-    </div>
-  </div>
-</div>
-</div>
 
-<div class="col-sm-6">
--->
 <br><br><br>
  <div class="landing"  >
       

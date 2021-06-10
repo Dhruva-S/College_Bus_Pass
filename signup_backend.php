@@ -10,7 +10,7 @@ include 'config.php';
 			$signupusername=$_POST['name'];
 			$emailid=$_POST['email'];
 
-			$signuppassword=$_POST['pass'];
+			$signupPassword=$_POST['pass'];
 			$_SESSION['uname']=$signupusername;
 			$_SESSION['email_id']=$emailid;
 			
@@ -39,9 +39,9 @@ if($result1==true)
 			}
 
 
-
-//inserting data nto the table
-$sql="INSERT into signup VALUES ('$emailid','$signupusername','$signuppassword')";
+$store_pass=password_hash($signupPassword, PASSWORD_BCRYPT);				//Salting and hashing the password using CRYPT_BLOWFISH algorithm
+//inserting data into the table
+$sql="INSERT into signup VALUES ('$emailid','$signupusername','$store_pass')";
 
 $result=mysqli_query($conn,$sql) or die(mysqli_error($conn));
 

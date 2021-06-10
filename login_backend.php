@@ -11,7 +11,7 @@ include "config.php";
 		
 			$emailid=$_POST['email'];
 			$_SESSION['email_id']=$emailid;
-			$loginpassword=$_POST['password'];
+			$userEnteredPass=$_POST['password'];
 			
 			
 
@@ -22,7 +22,7 @@ $conn=mysqli_connect($servername,$username,$password) or die(mysqli_error($conn)
 $select_db=mysqli_select_db($conn,$dbname) or die(mysqli_error($conn));
 
 
-$sql="SELECT username FROM signup WHERE email_id='$emailid' AND password='$loginpassword' ";
+$sql="SELECT * FROM signup WHERE email_id='$emailid'";
 
 $result=mysqli_query($conn,$sql) or die(mysqli_error($conn));
  
@@ -36,19 +36,26 @@ $result=mysqli_query($conn,$sql) or die(mysqli_error($conn));
 					$rows=mysqli_fetch_assoc($result);
 					$uname=$rows['username'];
 					$_SESSION['uname']=$uname;
+					$dbPass=$rows['password'];
 
-
-
-						echo ("<script LANGUAGE='JavaScript'>
+					if(password_verify( $userEnteredPass,$dbPass)){	 //checking if the user entered password matches the password in database
+						echo ("<script LANGUAGE='JavaScript'>				
 		                window.alert('Successfully Logged in!!');
 		                window.location.href='home.php';
 		                </script>");
+						}
+
+					else {											//Wrong password
+					echo ("<script LANGUAGE='JavaScript'>
+		                window.alert('Incorrect password!!');
+		                window.location.href='index.php#loginfocus';
+		                </script>");
+					}
 				}
 
-				else 
-				{
+				else {												//wrong username
 					echo ("<script LANGUAGE='JavaScript'>
-		                window.alert('Invalid credentials!!');
+		                window.alert('Invalid email id !!');
 		                window.location.href='index.php#loginfocus';
 		                </script>");
 				}

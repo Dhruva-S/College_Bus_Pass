@@ -157,7 +157,8 @@ body{
 	</div>
 	
 <div class="navbars">
-    <a href="studentportal.php"><i class="fa fa-fw fa-arrow-left"></i> BACK</a> 
+    <a href="studentportal.php" ><i class="fa fa-fw fa-arrow-left"></i> BACK</a> 
+    <a href="####" style="margin-left: 40%;" id="btnExport"><i class="fa fa-download"></i>Download </a>
 </div>
 	
 
@@ -278,7 +279,7 @@ $result2=mysqli_query($conn,$sql2) or die(mysqli_error($conn));
 		
 		</table>
 		</div>
-<input type="button" class="button" id="btnExport" value="Generate Pdf" />
+	
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.22/pdfmake.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
@@ -298,11 +299,6 @@ $result2=mysqli_query($conn,$sql2) or die(mysqli_error($conn));
             });
         });
     </script>
-		
-		
-
-
-	
 
 </body>
 </html>

@@ -2,5 +2,5 @@
 2)download the code and paste inside xampp/htdocs
 3)Run the xampp server and start mysql and Apache
 4)Go to localhost/phpmyadmin in browser and create a database called college_pass
-5import college_pass.sql which is present inside the project folder
+5import college_pass.sql in college_pass database which is present inside the project folder
 6)Run the application in http://localhost/College_Bus_Pass-main/index.php
